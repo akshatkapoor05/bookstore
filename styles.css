@@ -1,0 +1,330 @@
+.navbar {
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3b0101;
+    padding: 0 auto;
+    z-index: 5;
+}
+body, html{
+    scroll-behavior: smooth;
+    background-color: rgb(190, 226, 226);
+}
+.navbar img{
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+}
+.navbar ul li {
+    display: inline-block;
+    margin-right: 80px;
+    padding: 3px;
+}
+
+.navbar ul li a {
+    color: antiquewhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;  
+    transition-duration: 1s;
+}
+
+.navbar ul li a:hover{
+    font-weight: bolder;
+    font-size: large;
+}
+
+.side {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    z-index: -20;
+}
+
+.side img {
+    flex-grow: 1;
+    z-index: 2;
+}
+
+#intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    position: relative;
+    top: -800px;
+}
+
+.intro-content{
+    position: relative;
+    width: 50%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    letter-spacing: 1px;
+    z-index: 4;
+    text-align: center;
+}
+
+.intro-content h1{
+    font-size: 2em;
+}
+
+.cover img{
+    position: relative;
+    width: 500px;
+    z-index: 1;
+}
+.add-checkbox{
+    display: none;
+}
+.add-button{
+    background-color: #17013b;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+    top:150px;
+    border-radius: 10px;
+}
+.add-checkbox:checked + .add-button::before{
+    background-color: green;
+    content: 'Added';
+}
+.add-button::before{
+    content: 'Add+';
+}
+
+.intro-content p {
+    font: 1em sans-serif;
+}
+.intro-content p a{
+    color: aliceblue;
+    background-color:#17013b;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition-duration: 1s;
+}
+.intro-content p a:hover{
+    font-size: 1.2em;
+}
+.heading{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;  
+    color: #17013b;
+    font-size: 3em;
+    text-shadow: 2px 2px 3px #673dc9;
+}
+
+.card1{
+    background-color: #17013b;
+    border-radius: 10px;
+    max-width: 300px;
+    max-height: 323px;
+    margin: 20px;
+    margin-bottom: 40px;
+    padding: 10px;
+    box-shadow: 8px 8px 3px #543980;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-shrink: 1;
+}
+.card1 button{
+    opacity: 0;
+    background-color: #17013b;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+}
+.card1:hover button{
+    opacity: 1;
+}
+.card1:hover{
+    transform: scale(1.1);
+}
+.card1 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+.card1 span{
+    position: relative;
+    bottom: 180px;
+    left: 10px;
+    color: white;
+}
+.card1 .price{
+    color: white;
+    text-align: right;
+    font-size: larger;
+}
+.harry{
+    font-weight: bolder;
+}
+p{
+    padding: 3px;
+    margin: 0px;
+}
+.harry, .twelve{
+    color: white;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: relative;
+}
+.chronicle{
+    color: white;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#best{
+    position: relative;
+    top:-300px;
+}
+
+.searchbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchbar form{
+    width: 100%;
+    max-width: 400px;
+    background-color: #17013b;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    box-shadow: 6px 6px 3px #673dc9;
+}
+.searchbar img{
+    width: 30px;
+    height: 30px;
+}
+.searchbar input{
+    width: 100%;
+    max-width: 600px;
+    background: transparent;
+    font-size: 20px;
+    color: white;
+    align-content: center;
+    border: 0;
+    outline: none;
+    padding: 10px 20px;
+}
+.searchbar form:hover{
+    background-color: #543980;
+    border: 4px solid #17013b;
+    box-shadow: none;
+}
+#review card1{
+    align-content: center;
+}
+#review .card1 img{
+    width: 180px;
+    height: 180px;
+    border-radius: 100px;
+    display: inline;;
+}
+#review .card1 .name{
+    font-size: 1.6em;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    margin: 3px;
+}
+#review .card1 .opinion{
+    position: relative;
+    bottom: 2px;
+    color: white;
+}
+.reviewbox input, .reviewbox textarea, .reviewbox button {
+    display: block;  
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border: 2px solid #17013b;
+    border-radius: 5px;
+    background-color: #673dc9;
+    box-shadow: 3px 3px 3px #543980;
+}
+.reviewbox input, .reviewbox textarea{
+    width: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: black;
+}
+.reviewbox input::placeholder, textarea::placeholder{
+    color: rgb(3, 3, 3);
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.reviewbox button{
+    background-color: black;
+    color: white;
+}
+.reviewbox textarea{
+    height: 80px;
+}
+.reviewbox input:hover, .reviewbox textarea:hover{
+    border: 4px solid #17013b;
+}
+
+#footer{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#footer div{
+    width: 25%;
+    min-width: 200px;
+    align-content: center;
+}
+.followus img{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+#footer div ul li a{
+    text-decoration: none;
+    color: #673dc9;
+}
+#footer li{
+    list-style-type: none;
+}
+.backtop{
+    background-color: #17013b;
+    display: block;
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 4px 4px 3px #543980;
+}
+.top{
+    align-content: center;
+}
+.backtop a{
+    color: white;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.backtop a:hover{
+    font-size: 1.2em;
+    transition: ease-in-out;
+}
